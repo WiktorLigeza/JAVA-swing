@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.company.GUI.FulfillmentCenterGUI">
+  <grid id="27dc6" binding="rootPanel" layout-manager="GridLayoutManager" row-count="8" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="1034" height="617"/>
+    </constraints>
+    <properties>
+      <background color="-16777216"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="a8c6e" class="javax.swing.JButton" binding="removeProductButton">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-11380651"/>
+          <foreground color="-12722916"/>
+          <text value="Remove product"/>
+        </properties>
+      </component>
+      <component id="3d9fe" class="javax.swing.JButton" binding="addProductButton">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-11380651"/>
+          <foreground color="-12722916"/>
+          <text value="Add product"/>
+        </properties>
+      </component>
+      <component id="ef42d" class="javax.swing.JComboBox" binding="stateComboBox">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-11380651"/>
+          <foreground color="-4518394"/>
+        </properties>
+      </component>
+      <component id="23bbe" class="javax.swing.JTextField" binding="filterTextField">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-11380651"/>
+          <foreground color="-4520960"/>
+          <text value="Filter by name"/>
+        </properties>
+      </component>
+      <component id="39e2f" class="javax.swing.JButton" binding="addCenterButton">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-11380651"/>
+          <foreground color="-12722916"/>
+          <text value="Add center"/>
+        </properties>
+      </component>
+      <component id="fb8b8" class="javax.swing.JButton" binding="removeCenterButton">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-11380651"/>
+          <foreground color="-12722916"/>
+          <text value="Remove center"/>
+        </properties>
+      </component>
+      <component id="55e4b" class="javax.swing.JButton" binding="sortCentersByLoadButton">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-11380651"/>
+          <foreground color="-12722916"/>
+          <text value="Sort centers by current load"/>
+        </properties>
+      </component>
+      <component id="b9e7d" class="javax.swing.JLabel" binding="centerInfoLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="91" height="22"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-1"/>
+          <foreground color="-1"/>
+          <text value="Info about center"/>
+        </properties>
+      </component>
+      <component id="bf945" class="javax.swing.JLabel" binding="productInfoLabel">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="100" height="22"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-1"/>
+          <foreground color="-1"/>
+          <text value="Info about product"/>
+        </properties>
+      </component>
+      <component id="75a97" class="javax.swing.JTable" binding="productInfoTable" custom-create="true">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="2" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="15"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14869216"/>
+          <enabled value="false"/>
+          <foreground color="-3352867"/>
+          <gridColor color="-11380651"/>
+          <selectionBackground color="-11380651"/>
+          <selectionForeground color="-6542405"/>
+        </properties>
+      </component>
+      <component id="e54d5" class="javax.swing.JTable" binding="centerInfoTable" custom-create="true">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="15"/>
+          </grid>
+        </constraints>
+        <properties>
+          <autoCreateRowSorter value="false"/>
+          <background color="-14869216"/>
+          <enabled value="false"/>
+          <foreground color="-3352867"/>
+          <gridColor color="-11380651"/>
+          <selectionBackground color="-11380651"/>
+          <selectionForeground color="-6542405"/>
+        </properties>
+      </component>
+      <component id="e5475" class="javax.swing.JTable" binding="productTable" custom-create="true">
+        <constraints>
+          <grid row="6" column="1" row-span="2" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="15"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14869216"/>
+          <foreground color="-3352867"/>
+          <gridColor color="-11380651"/>
+          <selectionBackground color="-11380651"/>
+          <selectionForeground color="-6542405"/>
+        </properties>
+      </component>
+      <component id="4fecf" class="javax.swing.JTable" binding="centerTable" custom-create="true">
+        <constraints>
+          <grid row="5" column="0" row-span="3" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14869216"/>
+          <foreground color="-3352867"/>
+          <gridColor color="-11380651"/>
+          <selectionBackground color="-11380651"/>
+          <selectionForeground color="-6542405"/>
+          <updateSelectionOnSort value="true"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
